@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+{% block head %}Home{% endblock %}
+{% block content %}
+    <!-- Recent products -->
+    <p class="subtitle">Recent products</p>
+    <br/>
+{% for product in products %}
+    <p>{{ product.name }}</p>
+    <p>{{ product.price }}</p>
+{% endfor %}
+
+
+{% endblock content %}
